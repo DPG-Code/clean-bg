@@ -4,7 +4,7 @@
   </h2>
   <ul class="flex items-center justify-center gap-6">
     <li>
-      <a href="https://github.com/DPG-Code/clean-bg.git" target="_blank">
+      <a href="https://github.com/DPG-Code/clean-bg" target="_blank">
         <svg
           width="24px"
           height="24px"

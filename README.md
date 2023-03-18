@@ -4,7 +4,7 @@ Say goodbye to distracting backgrounds with our free and easy-to-use background 
 
 ## Build whit:
 
-- Astro
+- Svelte
 - Cloudinary
 - Tailwind
 
