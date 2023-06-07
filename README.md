@@ -2,6 +2,8 @@
 
 Say goodbye to distracting backgrounds with our free and easy-to-use background remover app. Perfect for product photos and portraits.
 
+![Project previe image](https://res.cloudinary.com/dhpxqwsym/image/upload/w_1280,h_720,c_fill/v1678870284/documentations/cleanbg_deblrv)
+
 ## Build whit:
 
 - Svelte
