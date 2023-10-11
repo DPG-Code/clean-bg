@@ -23,29 +23,33 @@
   }
 </script>
 
-<two-up class="two-up">
+<two-up class="two-up z-40">
   <img
-    class="rounded-2xl shadow-2xl"
+    class="rounded-2xl shadow-2xl xl:rounded-3xl"
     src={$originalImage}
     alt="uploaded for user"
   />
   {#if processingImage}
     <img
-      class="rounded-2xl shadow-2xl blur-sm	grayscale"
+      class="rounded-2xl shadow-2xl blur-sm grayscale xl:rounded-3xl"
       src={$originalImage}
       alt="uploaded for user"
     />
   {:else}
-    <img class="rounded-2xl shadow-2xl" src={$modifiedImage} alt="changed" />
+    <img
+      class="rounded-2xl shadow-2xl xl:rounded-3xl"
+      src={$modifiedImage}
+      alt="changed"
+    />
   {/if}
 </two-up>
 
-<div class="mt-6 w-full flex items-center justify-center">
+<div class="mt-6 w-full flex items-center justify-center xl:mt-10">
   <a
     download
     href={$modifiedImage}
     target="_blank"
-    class="px-10 py-3 bg-black text-xl text-white text-medium rounded-full flex items-center justify-center gap-2"
+    class="px-10 py-3 bg-[#64ffe360] text-xl text-white text-medium rounded-full flex items-center justify-center gap-2 xl:px-16 xl:py-4 xl:text-2xl xl:gap-6"
   >
     Download
     <DownloadIcon />
@@ -54,10 +58,10 @@
 
 <style>
   .two-up {
-    --accent-colour: #000000;
-    --track-color: #000000;
-    --thumb-color: #000000;
-    --thumb-background: #fff;
+    --accent-colour: #131313;
+    --track-color: #131313;
+    --thumb-color: #131313;
+    --thumb-background: #ffffff;
     --thumb-size: 50px;
     --bar-size: 3px;
     --bar-touch-size: 25px;

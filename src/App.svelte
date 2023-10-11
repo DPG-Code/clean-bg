@@ -7,26 +7,29 @@
 </script>
 
 <main
-  class="px-10 pb-12 w-full min-h-screen flex flex-col items-center justify-start relative overflow-hidden"
+  class="px-10 pb-12 w-full min-h-screen bg-[#131313] flex flex-col items-center justify-start relative overflow-hidden"
 >
   <Navbar />
-  <h1 class="mb-6 text-center text-5xl font-semibold tracking-tight">
+  <h1
+    class="mb-6 text-white text-center text-5xl font-semibold tracking-tight xl:mb-12 xl:text-8xl"
+  >
     Cleanbg
   </h1>
   <p
-    class="mb-12 max-w-lg text-center text-base font-normal text-neutral-400 leading-snug"
+    class="mb-12 max-w-lg text-center text-base font-medium text-neutral-400 leading-snug xl:max-w-2xl xl:text-2xl"
   >
     Say goodbye to distracting backgrounds with our free and easy-to-use
     background remover app. Perfect for product photos and portraits.
   </p>
-  <section class="w-full max-w-xl grid grid-cols-1 place-content-center">
+  <section
+    class="w-full max-w-xl grid grid-cols-1 place-content-center xl:max-w-2xl"
+  >
     {#if $imageStatus === ImageStatus.READY || $imageStatus === ImageStatus.UPLOADING}
       <StepUpload />
     {:else if $imageStatus === ImageStatus.DONE}
       <StepEdit />
     {/if}
   </section>
-  <div class="gradient_down" />
 </main>
 
 <style>
@@ -36,15 +39,31 @@
     font-family: 'Poppins', sans-serif;
   }
 
-  .gradient_down {
-    z-index: -1;
-    width: 200%;
-    height: 100%;
-    background: linear-gradient(83.21deg, #b721ff 0%, #c850c0 100%);
-    background-blend-mode: overlay;
-    -webkit-mask-image: radial-gradient(rgb(255, 255, 255), transparent 75%);
-    mask-image: radial-gradient(rgba(255, 255, 255) transparent 75%);
+  main::before {
+    content: '';
+    width: 240px;
+    height: 240px;
+    background: linear-gradient(
+      125deg,
+      rgb(100, 255, 227, 50%) 5%,
+      rgb(100, 255, 227, 15%) 25%,
+      rgb(100, 255, 227, 7.5%) 100%
+    );
+    filter: blur(80px);
+    border-radius: 100%;
     position: absolute;
-    top: 60%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  @media only screen and (min-width: 1280px) {
+    main::before {
+      width: 620px;
+      height: 620px;
+      top: 15%;
+      left: 15%;
+    }
   }
 </style>

@@ -1,32 +1,30 @@
-<span class="w-full flex items-center justify-center absolute bottom-10"
-  ><svg
-    class="animate-pulse"
-    width="32px"
-    height="32px"
+<div class="w-full text-white flex items-center justify-center">
+  <svg
+    class="w-8 h-8 animate-spin xl:w-12 xl:h-12"
     viewBox="0 0 24 24"
     stroke-width="1.5"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    color="#000000"
+    color="#ffffff"
     ><path
       d="M12 17a1 1 0 100-2 1 1 0 000 2z"
-      fill="#000000"
-      stroke="#000000"
+      fill="#ffffff"
+      stroke="#ffffff"
       stroke-width="1.5"
       stroke-linecap="round"
       stroke-linejoin="round"
     /><path
       d="M21 7.353v9.294a.6.6 0 01-.309.525l-8.4 4.666a.6.6 0 01-.582 0l-8.4-4.666A.6.6 0 013 16.647V7.353a.6.6 0 01.309-.524l8.4-4.667a.6.6 0 01.582 0l8.4 4.667a.6.6 0 01.309.524z"
-      stroke="#000000"
+      stroke="#ffffff"
       stroke-width="1.5"
       stroke-linecap="round"
       stroke-linejoin="round"
     /><path
       d="M20.5 16.722l-8.209-4.56a.6.6 0 00-.582 0L3.5 16.722M3.528 7.294l8.18 4.544a.6.6 0 00.583 0l8.209-4.56M12 3v9M12 19.5V22"
-      stroke="#000000"
+      stroke="#ffffff"
       stroke-width="1.5"
       stroke-linecap="round"
       stroke-linejoin="round"
     /></svg
-  ></span
->
+  >
+</div>

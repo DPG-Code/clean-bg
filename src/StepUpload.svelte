@@ -55,24 +55,61 @@
 
 <form
   id="dropzone"
-  class="p-6 w-full aspect-video bg-white rounded-2xl shadow-2xl flex flex-col items-center justify-center gap-5 cursor-pointer relative"
+  class="dropzone shadow-2xl"
   action="https://api.cloudinary.com/v1_1/dkk9jnnus/image/upload"
 >
   {#if $imageStatus === ImageStatus.READY}
     <button
-      class="px-8 py-2 bg-black text-white text-medium rounded-full pointer-events-none flex items-center justify-center gap-4"
+      class="px-8 py-2 bg-[#64ffe360] text-white font-normal rounded-full pointer-events-none flex items-center justify-center gap-4 xl:px-16 xl:py-4 xl:text-2xl xl:gap-6"
       >Upload file <UploadIcon /></button
     >
-    <span class="text-base text-neutral-500 text-center font-medium"
+    <span class="text-base text-neutral-500 text-center font-medium xl:text-3xl"
       >Or drop file</span
     >
-    <ul class="flex items-center justify-center gap-2">
-      <li class="text-xs text-neutral-400 text-center font-medium">.jpg</li>
-      <li class="text-xs text-neutral-400 text-center font-medium">.png</li>
-      <li class="text-xs text-neutral-400 text-center font-medium">.webp</li>
+    <ul class="flex items-center justify-center gap-2 xl:gap-4">
+      <li class="text-xs text-neutral-400 text-center font-medium xl:text-lg">
+        .jpg
+      </li>
+      <li class="text-xs text-neutral-400 text-center font-medium xl:text-lg">
+        .png
+      </li>
+      <li class="text-xs text-neutral-400 text-center font-medium xl:text-lg">
+        .webp
+      </li>
     </ul>
   {/if}
   {#if $imageStatus === ImageStatus.UPLOADING}
     <Loader />
   {/if}
 </form>
+
+<style>
+  #dropzone {
+    padding: 40px 24px;
+    width: 100%;
+    min-height: auto;
+    aspect-ratio: 16/9;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    background-color: #202124;
+    border: 2px solid #38383e;
+    border-radius: 16px;
+    position: relative;
+    z-index: 40;
+  }
+
+  :global(.dropzone.dz-clickable .dz-message) {
+    display: none !important;
+  }
+
+  @media only screen and (min-width: 1280px) {
+    #dropzone {
+      gap: 32px;
+      border-radius: 24px;
+    }
+  }
+</style>
