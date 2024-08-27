@@ -1,16 +1,40 @@
-# Cleanbg
+<div align="center">
+  <a href="https://clean-bg.vercel.app/">
+    <img
+      src="https://res.cloudinary.com/dhpxqwsym/image/upload/w_1280,h_720,c_fill/v1678870284/documentations/cleanbg_hdptex"
+      alt="Cleanbg principal page"
+    />
+  </a>
+  <p>
+    <b>
+      Say goodbye to distracting backgrounds with our free and easy-to-use background remover app. Perfect for product photos and portraits.
+    </b>
+  </p>
 
-Say goodbye to distracting backgrounds with our free and easy-to-use background remover app. Perfect for product photos and portraits.
+<div align="center">
+<p></p>
+</div>
 
-![Project previe image](https://res.cloudinary.com/dhpxqwsym/image/upload/w_1280,h_720,c_fill/v1678870284/documentations/cleanbg_otoldm)
+![Svelte Badge](https://img.shields.io/badge/Svelte-FF3E00?logo=svelte&logoColor=fff&style=flat)
+![GitHub stars](https://img.shields.io/github/stars/Dpg-Code/clean-bg)
+![GitHub forks](https://img.shields.io/github/forks/Dpg-Code/clean-bg)
+![GitHub PRs](https://img.shields.io/github/issues-pr/Dpg-Code/clean-bg)
+![GitHub issues](https://img.shields.io/github/issues/Dpg-Code/clean-bg)
 
-## Build whit:
+</div>
 
-- Svelte
-- Cloudinary
-- Tailwind
+## 🛠️ Stack
 
-## Installation
+- **Svelte**
+- **Cloudinary**
+- **Tailwind**
+- **Dropzone**
+- **Two-up-element**
+
+## 🚀 Getting Started
+
+> [!NOTE]
+> This app have a daily limit usage.
 
 To install and run the application locally, follow these steps:
 
